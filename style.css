@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+
+:root{
+	--ff_Raleway:'Raleway', sans-serif;
+
+	--clr-GR_Orange:hsl(6, 100%, 80%);
+	--clr-GR_Pink:hsl(335, 100%, 65%);
+	--clr-Pale_blue:hsl(243, 100%, 93%);
+	--clr-Grayish_blue:hsl(229, 7%, 55%);
+	--clr-Dark_blue:hsl(228, 56%, 26%);
+	--clr-Very_Dark_blue:hsl(229, 57%, 11%);
+	--clr-white:hsl(0, 0%, 100%);
+	--clr-black:hsla(0, 0%, 0%, 0.719);
+}
+
+*,*::before,*::after{
+	box-sizing: border-box;
+}
+
+body{
+	margin: 0;
+	padding: 0;
+	background: url(./images/bg-mobile.png) no-repeat;
+	background-size: cover;
+	font-family: var(--ff_Raleway);
+}
+main{
+	display: flex;
+	flex-flow: column;
+	justify-content: center;
+	align-items: center;
+	height: 160vw;
+	max-height: 590px;
+	min-height: 300px;
+	min-width: 300px;
+	gap:50px;
+	
+}
+
+main section:first-child{
+	background-color: var(--clr-Dark_blue);
+	height: 45vw;
+	width: 85vw;
+	max-width: 350px;
+	max-height: 230px;
+	border-radius: 10px 80px 10px 10px;
+	min-width: 300px;
+	min-height: 155px;
+}
+
+main section:first-child img:first-child{
+	display: block;
+	margin-top: 30px;
+	margin-left: 25px;
+}
+.icon{
+	display: flex;
+	gap:45px;
+	margin-left: 10px;
+}
+.icon>*{
+	height: 23px;
+	width: 23px;
+	box-shadow: 0px 0px 0px 8px var(--clr-Very_Dark_blue);
+	background-color:var(--clr-Very_Dark_blue);
+	border-radius: 5px;
+}
+.icon>img:nth-child(2), img:nth-child(3){
+	align-self: flex-end;
+}
+
+main section:nth-child(2){
+	background-color: var(--clr-Dark_blue);
+	color: var(--clr-white);
+	height: 45vw;
+	width: 85vw;
+	max-height: 200px;
+	max-width: 680px;
+	border-radius: 10px;
+	position: relative;
+	top:2%;
+	min-width: 300px;
+	min-height: 155px;
+	position: relative;
+}
+
+main section:nth-child(2) p{
+	margin-top: 30px;
+	margin-left: 25px;
+}
+main section:nth-child(2) input{
+	margin-left: 25px;
+	width: 75vw;
+	max-width: 625px;
+	min-width: 260px;
+	appearance: none;
+	border-radius: 50px;
+	background-color: var(--clr-Very_Dark_blue);
+	overflow: hidden;
+}
+
+main section:nth-child(2) input:hover{
+	cursor: pointer;
+}
+main section:nth-child(2) input::-webkit-slider-thumb{
+	appearance: none;
+	height: 20px;
+	width: 20px;
+	border-radius: 50%;
+	background-color: var(--clr-white);
+
+
+
+
+	/* ?range progress selector don't work on chrome so i used box-shadow to create range progress    */
+	/* ?the best solution maybe with javascript but i just use css cuz im focusing on my css skills  */
+
+	box-shadow:  -5px 0 0 0 red ,-10px 0 0 0 red,-15px 0 0 0 red,-20px 0 0 0 red,-25px 0 0 0 red,-30px 0 0 0 red,-35px 0 0 0 red,-40px 0 0 0 red,-50px 0 0 0 red,-55px 0 0 0 red,-60px 0 0 0 red,-65px 0 0 0 red,-70px 0 0 0 red,-75px 0 0 0 red,-80px 0 0 0 red,-85px 0 0 0 red,-90px 0 0 0 red,-100px 0 0 0 red,-115px 0 0 0 red ,-110px 0 0 0 red,-115px 0 0 0 red,-120px 0 0 0 red,-125px 0 0 0 red,-130px 0 0 0 red,-135px 0 0 0 red,-140px 0 0 0 red,-150px 0 0 0 red,-155px 0 0 0 red,-160px 0 0 0 red,-165px 0 0 0 red,-170px 0 0 0 red,-175px 0 0 0 red,-180px 0 0 0 red,-185px 0 0 0 red,-190px 0 0 0 red,-195px 0 0 0 red,-200px 0 0 0 red ,-210px 0 0 0 red,-215px 0 0 0 red,-220px 0 0 0 red,-225px 0 0 0 red,-230px 0 0 0 red,-235px 0 0 0 red,-240px 0 0 0 red,-250px 0 0 0 red,-255px 0 0 0 red,-260px 0 0 0 red,-265px 0 0 0 red,-270px 0 0 0 red,-275px 0 0 0 red,-280px 0 0 0 red,-285px 0 0 0 red,-290px 0 0 0 red,-300px 0 0 0 red, -305px 0 0 0 red ,-310px 0 0 0 red,-315px 0 0 0 red,-320px 0 0 0 red,-325px 0 0 0 red,-330px 0 0 0 red,-335px 0 0 0 red,-340px 0 0 0 red,-350px 0 0 0 red,-355px 0 0 0 red,-360px 0 0 0 red,-365px 0 0 0 red,-370px 0 0 0 red,-375px 0 0 0 red,-380px 0 0 0 red,-385px 0 0 0 red,-390px 0 0 0 red,-400px 0 0 0 red,-415px 0 0 0 red ,-410px 0 0 0 red,-415px 0 0 0 red,-420px 0 0 0 red,-425px 0 0 0 red,-430px 0 0 0 red,-435px 0 0 0 red,-440px 0 0 0 red,-450px 0 0 0 red,-455px 0 0 0 red,-460px 0 0 0 red,-465px 0 0 0 red,-470px 0 0 0 red,-475px 0 0 0 red,-480px 0 0 0 red,-485px 0 0 0 red,-490px 0 0 0 red,-495px 0 0 0 red,-500px 0 0 0 red ,-510px 0 0 0 red,-515px 0 0 0 red,-520px 0 0 0 red,-525px 0 0 0 red,-530px 0 0 0 red,-535px 0 0 0 red,-540px 0 0 0 red,-550px 0 0 0 red,-555px 0 0 0 red,-560px 0 0 0 red,-565px 0 0 0 red,-570px 0 0 0 red,-575px 0 0 0 red,-580px 0 0 0 red,-585px 0 0 0 red,-590px 0 0 0 red,-600px 0 0 0 red,-610px 0 0 0 red;
+}
+
+
+/* *only work on  firefox web browser */
+main section:nth-child(2) input::-moz-range-progress{
+	background:linear-gradient(to right,var(--clr-GR_Orange),var(--clr-GR_Pink));
+	height: 13px;
+	border-radius: 50px;
+}
+
+
+
+
+main section:nth-child(2) ul{
+	list-style: none;
+	display: flex;
+	justify-content: space-between;
+	margin-right: 5%;
+}
+
+main section:nth-child(2) ul::before{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	content: "185 GB left";
+	font-weight: bold;
+	font-size: large;
+	background-color: var(--clr-white);
+	color:var(--clr-black) ;
+	position: absolute;
+	right: 25%;
+	bottom:-24%;
+	height: 70px;
+	width: 160px;
+	border-radius: 10px;
+	vertical-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+/* *desktop layout */
+@media (min-width:1000px) {
+	body{
+		background:url(./images/bg-desktop.png) no-repeat ,var(--clr-Very_Dark_blue);
+		background-position-y:180%,0 ;
+		background-size: 100%;
+	}
+	main{
+		display: flex;
+		flex-flow: row;
+	}
+	main section:first-child img:first-child{
+	margin-top: 50px;
+        }
+	main section:nth-child(2) p{
+	margin-top: 50px;}
+
+	main section:nth-child(2) ul::before{
+		position: absolute;
+	right: 10%;
+	top:-10%;
+	}
+	main section:nth-child(2) ul::after{
+	content: "";
+	position: absolute;
+	border-top: solid 30px var(--clr-white);
+	border-left: solid 10px transparent;
+	border-right: solid 10px transparent;
+	border-bottom: solid 30px transparent;
+	right: 8.5%;
+	top:20%;
+	transform: rotate(-20deg);
+
+
+}
+}
